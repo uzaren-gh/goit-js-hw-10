@@ -38,7 +38,7 @@ function wayChoise() {
         clearResult();
         searchBox.style.outlineColor = '#dc3545';
         Notify.failure('Oops, there is no country with that name');
-        console.log(error);
+        // console.log(error);
       });
   }
 }
