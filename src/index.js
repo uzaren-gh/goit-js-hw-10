@@ -45,7 +45,7 @@ function wayChoise() {
 
 function renderCountry(country) {
   let markup = '';
-  amount = country.length;
+  const amount = country.length;
 
   if (amount > 10) {
     clearResult();
