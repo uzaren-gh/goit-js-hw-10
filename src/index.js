@@ -27,10 +27,11 @@ searchBox.addEventListener(
 );
 
 function wayChoise() {
-  if (searchBox.value === '') {
+  inputStr = searchBox.value.trim();
+  if (inputStr === '') {
     clearResult();
   } else {
-    fetchCountries(searchBox.value, fields)
+    fetchCountries(inputStr, fields)
       .then(country => {
         renderCountry(country);
       })
