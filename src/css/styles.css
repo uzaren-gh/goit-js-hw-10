@@ -10,6 +10,7 @@ body {
   background-color: #fafafa;
   color: #212121;
   line-height: 1.5;
+  padding: 0;
 }
 
 #search-box {
@@ -19,9 +20,20 @@ body {
   margin-bottom: 16px;
 }
 
-#country-list {
-  font-family: Roboto;
-  font-size: 70px;
-  font-weight: 700;
+.country-list {
+  font-family: Segoe UI;
+  font-size: 18px;
+  font-weight: 600;
+  margin-left: 0px;
+  padding-left: 0;
+  line-height: 200%;
+  list-style-type: none;
 
+}
+
+.country-info {
+  font-family: sans-serif;
+  margin-left: 0px;
+  line-height: 200%;
+  list-style-type: none;
 }

@@ -8,11 +8,11 @@ Notiflix.Notify.init({
   fontSize: '25px',
   fontFamily: 'Roboto',
   clickToClose: true,
-  timeout: 3000,
+  timeout: 1500,
 });
 
 const DEBOUNCE_DELAY = 300;
-var debounce = require('lodash.debounce');
+let debounce = require('lodash.debounce');
 const fields = 'name,capital,population,languages,flags';
 const countryInfo = document.querySelector('.country-info');
 const countryList = document.querySelector('.country-list');
@@ -61,7 +61,7 @@ function renderCountry(country) {
       const { name, flags } = country[i];
       markup =
         markup +
-        `<p> <span> <img class=flag-img src="${flags.svg}" width = "25" height = "15"></span> ${name.common} <p>`;
+        `<li> <span> <img class=flag-img src="${flags.svg}" width = "25" height = "15"></span> ${name.common} </li>`;
     }
     countryList.innerHTML = markup;
   } else {
