@@ -27,7 +27,7 @@ searchBox.addEventListener(
 );
 
 function wayChoise() {
-  inputStr = searchBox.value.trim();
+  const inputStr = searchBox.value.trim();
   if (inputStr === '') {
     clearResult();
   } else {
