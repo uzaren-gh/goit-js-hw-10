@@ -7,10 +7,14 @@ body {
     Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #fafafa;
+  /* background-color: #fafafa; */
   color: #212121;
   line-height: 1.5;
   padding: 0;
+  background-image: url('data:image/svg+xml;utf8,<svg width="36" height="36" xmlns="http://www.w3.org/2000/svg"><rect style="fill-opacity: 0.4" width="2" height="2" /></svg>');
+  background-size: 22px 22px;
+  background-color: rgb(210, 218, 223, 0.3);
+
 }
 
 #search-box {
